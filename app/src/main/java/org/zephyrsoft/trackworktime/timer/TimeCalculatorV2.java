@@ -303,7 +303,7 @@ public class TimeCalculatorV2 {
 		currentDate = currentDate.plusDays(1);
 
 
-		ZonedDateTime now = ZonedDateTime.now();
+		ZonedDateTime now = ZonedDateTime.now(zoneId);
 
 		boolean isToday = currentDate.isEqual(now.toLocalDate());
 		isInFuture = currentDate.isAfter(now.toLocalDate());
